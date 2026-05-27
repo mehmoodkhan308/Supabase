@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App UI</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 flex justify-center items-center min-h-screen p-5">
+
+  <div class="w-full max-w-md bg-slate-800 rounded-2xl p-6 shadow-2xl">
+
+    <!-- Heading -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-3xl font-bold text-white">
+        Todo App
+      </h1>
+
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition">
+        Add
+      </button>
+    </div>
+
+    <!-- Input -->
+    <div class="flex gap-3 mb-6">
+      <input id="input"
+        type="text"
+        placeholder="Enter your task..."
+        class="flex-1 px-4 py-3 rounded-xl bg-slate-700 text-white outline-none border border-slate-600 focus:border-indigo-500"
+      />
+
+      <button class="bg-green-500 hover:bg-green-600 px-5 rounded-xl text-white font-semibold transition" onclick="addTodo()">
+        +
+      </button>
+    </div>
+
+    <!-- Todo List -->
+    <div class="space-y-4">
+
+      <!-- Item -->
+      <div class="bg-slate-700 p-4 rounded-xl flex justify-between items-center">
+        <div>
+          <h2 class="text-white font-semibold">
+            Learn JavaScript
+          </h2>
+          <p class="text-slate-400 text-sm">
+            Practice DOM and Events
+          </p>
+        </div>
+
+        <div class="flex gap-2">
+          <button class="bg-yellow-500 hover:bg-yellow-600 px-3 py-2 rounded-lg text-white transition">
+            ✏
+          </button>
+
+          <button class="bg-red-500 hover:bg-red-600 px-3 py-2 rounded-lg text-white transition">
+            🗑
+          </button>
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="bg-slate-700 p-4 rounded-xl flex justify-between items-center">
+        <div>
+          <h2 class="text-white font-semibold">
+            Build Todo App
+          </h2>
+          <p class="text-slate-400 text-sm">
+            Using HTML CSS JavaScript
+          </p>
+        </div>
+
+        <div class="flex gap-2">
+          <button class="bg-yellow-500 hover:bg-yellow-600 px-3 py-2 rounded-lg text-white transition">
+            ✏
+          </button>
+
+          <button class="bg-red-500 hover:bg-red-600 px-3 py-2 rounded-lg text-white transition">
+            🗑
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+<script type="module" src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</html>
