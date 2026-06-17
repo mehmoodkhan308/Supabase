@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ServiceHub Signup</title>
+
+<link rel="stylesheet" href="auth-style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="logo">
+Service<span>Hub</span>
+</div>
+
+
+<h2>Create Account</h2>
+
+<p class="text">
+Join ServiceHub Marketplace
+</p>
+
+
+
+
+
+
+<label>Full Name</label>
+
+<input id="name" type="text" placeholder="Enter your name">
+
+
+
+<label>Email</label>
+
+<input id="email" type="email" placeholder="Enter your email">
+
+
+
+<label>Password</label>
+
+<input id="password" type="password" placeholder="Create password">
+
+
+
+<label>Select Account Type</label>
+
+
+<select id="servicetype">
+
+<option >Buyer</option>
+
+<option>Seller</option>
+
+</select>
+
+
+
+<button onclick="SignUphander()">
+Signup
+</button>
+
+
+
+<p class="bottom">
+
+Already have account?
+
+<a href="login.html">
+Login
+</a>
+
+</p>
+
+
+
+
+
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module" src="./auth.js"></script>
+</html>

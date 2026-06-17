@@ -1,0 +1,1 @@
+import supabaseClient from "../app.js";
